@@ -62,15 +62,10 @@ const surveyJson = {
           choices: [
             "Pirms treniņa",
             "Pēc treniņa",
+            "Cits"
             
           ],
-          showOtherItem: true,
-          otherPlaceholder: {
-            default: "",
-          },
-          otherText: {
-            default: "Cits",
-          },
+          
         },
         {
           visibleIf:
@@ -136,7 +131,7 @@ const surveyJson = {
             "{response_time} = 'Pēc treniņa'",
           name: "dance_duration",
           title: "Cik ilgi Jūs nodarbojatoies ar dejošanu?",
-          description: "Laiku norādīt gados/mēnešos",
+          description: "Laiku norādīt gados",
           type: "text",
           inputType: "number",
           isRequired: true,
