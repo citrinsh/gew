@@ -72,10 +72,24 @@ const surveyJson = {
             "{response_time} = 'Cits' ",
           name: "profession",
           title: "Kāda ir Jūsu nodarbošanās?",
-          description: "",
-          type: "text",
-          inputType: "text",
           isRequired: true,
+          type: "radiogroup",
+          choices: [
+            "pilna laika students",
+            "nepilna laika students",
+            "bezdarbnieks",
+            "profesijas pārstāvis",
+            
+              ],
+            ],
+            showOtherItem: true,
+            otherPlaceholder: {
+              default: "",
+            },
+            otherText: {
+              description: "Norādīt konkrētu profesijas nosaukumu",
+              default: "profesijas pārstāvis",
+            },
         },
         {
           visibleIf:
