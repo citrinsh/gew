@@ -81,7 +81,7 @@ const surveyJson = {
             "profesijas pārstāvis",
             
               ],
-            ],
+            ,
             showOtherItem: true,
             otherPlaceholder: {
               default: "",
@@ -90,7 +90,8 @@ const surveyJson = {
               description: "Norādīt konkrētu profesijas nosaukumu",
               default: "profesijas pārstāvis",
             },
-        },
+          },
+           
         {
           visibleIf:
             "{response_time} = 'Pēc treniņa' ",
