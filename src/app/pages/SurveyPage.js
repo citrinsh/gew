@@ -12,6 +12,49 @@ const surveyJson = {
       title: "Lūdzu sniedziet atbildes par sevi!",
       elements: [
         {
+          name: "participant_age",
+          title: "Jūsu vecums",
+          isRequired: true,
+          type: "radiogroup",
+          choices: [
+            "18-21",
+            "22-25",
+            "26-30",
+            "30-35",
+            "35-40",
+             
+          ],
+          showOtherItem: true,
+          otherPlaceholder: {
+            default: "",
+          },
+          otherText: {
+            default: "Cits",
+          },
+        },
+
+        {
+          name: "hobbies",
+          title: "Kādi ir Jūsu hobiji?",
+          isRequired: true,
+          type: "radiogroup",
+          choices: [
+            "māksla un rokdarbi",
+            "mūzikas instrumentu spēlēšana",
+            "orientēšanās un apvidus sporta veidi",
+            "videospēles 2D",
+            "videospēles 3D",
+             
+          ],
+          showOtherItem: true,
+          otherPlaceholder: {
+            default: "",
+          },
+          otherText: {
+            default: "Cits",
+          },
+        },
+        {
           name: "response_time",
           title: "Emocijas atzīmēju:",
           isRequired: true,
@@ -19,8 +62,7 @@ const surveyJson = {
           choices: [
             "Pirms treniņa",
             "Pēc treniņa",
-            "Pirms sacensībām",
-            "Pēc sacensībām",
+            
           ],
           showOtherItem: true,
           otherPlaceholder: {
@@ -32,7 +74,17 @@ const surveyJson = {
         },
         {
           visibleIf:
-            "{response_time} = 'Pēc treniņa' or {response_time} = 'Pēc sacensībām'",
+            "{response_time} = 'Cits' ",
+          name: "profession",
+          title: "Kāda ir Jūsu nodarbošanās?",
+          description: "",
+          type: "text",
+          inputType: "text",
+          isRequired: true,
+        },
+        {
+          visibleIf:
+            "{response_time} = 'Pēc treniņa' ",
           name: "activity_intensity",
           title: "Kāda bija aktivitātes intensitāte?",
           type: "radiogroup",
@@ -41,7 +93,7 @@ const surveyJson = {
         },
         {
           visibleIf:
-            "{response_time} = 'Pēc treniņa' or {response_time} = 'Pēc sacensībām'",
+            "{response_time} = 'Pēc treniņa' ",
           name: "activity_duration",
           title: "Cik ilgi veicāt aktivitāti?",
           description: "Laiku norādīt minūtēs",
@@ -51,7 +103,7 @@ const surveyJson = {
         },
         {
           visibleIf:
-            "{response_time} = 'Pēc treniņa' or {response_time} = 'Pēc sacensībām'",
+            "{response_time} = 'Pēc treniņa' ",
           name: "time_since_activity",
           title: "Cik ilgs laiks pagājis kopš aktivitātes veikšanas?",
           isRequired: true,
@@ -67,7 +119,7 @@ const surveyJson = {
         },
         {
           visibleIf:
-            "{response_time} = 'Pēc treniņa' or {response_time} = 'Pēc sacensībām'",
+            "{response_time} = 'Pēc treniņa'",
           type: "rating",
           name: "activity_result_rating",
           title: "Kā novērtētu aktivitātē sasniegto rezultātu?",
@@ -79,6 +131,48 @@ const surveyJson = {
           displayMode: "buttons",
           rateDescriptionLocation: "bottom",
         },
+        {
+          visibleIf:
+            "{response_time} = 'Pēc treniņa'",
+          name: "dance_duration",
+          title: "Cik ilgi Jūs nodarbojatoies ar dejošanu?",
+          description: "Laiku norādīt gados/mēnešos",
+          type: "text",
+          inputType: "number",
+          isRequired: true,
+        },
+        {
+          visibleIf:
+            "{response_time} = 'Pēc treniņa' ",
+          name: "dance_style",
+          title: "Kāds ir Jūsu primārais deju stils?",
+          isRequired: true,
+          type: "radiogroup",
+          choices: ["Laikmetīgā deja", "Show dance", "Klasiskā deja (balets)",  "Street dance",  "Tautiskās dejas",],
+          showOtherItem: true,
+          otherPlaceholder: {
+            default: "",
+          },
+          otherText: {
+            default: "Cits stils",
+          },
+        },
+        {
+          visibleIf:
+            "{response_time} = 'Pēc treniņa' ",
+          name: "second_dance_style",
+          title: "Kāds ir Jūsu sekundārais (otrs labākais) deju stils??",
+          isRequired: true,
+          type: "radiogroup",
+          choices: ["Laikmetīgā deja", "Show dance", "Klasiskā deja (balets)",  "Street dance",  "Tautiskās dejas",],
+          showOtherItem: true,
+          otherPlaceholder: {
+            default: "",
+          },
+          otherText: {
+            default: "Cits stils",
+          },
+        }
       ],
     },
   ],
