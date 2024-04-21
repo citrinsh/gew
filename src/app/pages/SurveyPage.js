@@ -67,6 +67,7 @@ const surveyJson = {
           ],
           
         },
+        
         {
           visibleIf:
             "{response_time} = 'Cits' ",
@@ -118,7 +119,9 @@ const surveyJson = {
           title: "Cik ilgs laiks pagājis kopš aktivitātes veikšanas?",
           isRequired: true,
           type: "radiogroup",
-          choices: ["Līdz 30 min", "30 min - 2h", "2 - 24h"],
+          choices: ["Līdz 30 min",
+                     "30 min - 2h",
+                     "2 - 4h"],
           showOtherItem: true,
           otherPlaceholder: {
             default: "",
