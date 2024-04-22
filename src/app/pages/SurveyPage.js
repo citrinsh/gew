@@ -87,8 +87,10 @@ const surveyJson = {
             default: "",
           },
           otherText: {
-            default: "profesija konkrēti",
+            default: "profesija / lūgums norādīt konkrēti",
           },
+
+        
           },
                                                                    
         {
