@@ -82,15 +82,7 @@ const surveyJson = {
             "profesijas pārstāvis",
             
           ]           
-            showOtherItem: true,
-            otherPlaceholder: {
-              default: "",
-            },
-            otherText: {
-              default: "profesijas pārstāvis",
-              description: "Norādīt konkrētu profesijas nosaukumu",
-              
-            },
+           
           },
            
         {
