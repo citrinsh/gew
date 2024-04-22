@@ -79,18 +79,18 @@ const surveyJson = {
             "pilna laika students",
             "nepilna laika students",
             "bezdarbnieks",
-            
-            
-          ]           
+          
+                    
+          ],           
           showOtherItem: true,
           otherPlaceholder: {
             default: "",
           },
           otherText: {
-            default: "profesijas pārstāvis",
+            default: "profesija konkrēti",
           },
           },
-           
+                                                                   
         {
           visibleIf:
             "{response_time} = 'Pēc treniņa' ",
