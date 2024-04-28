@@ -13,25 +13,30 @@ const surveyJson = {
       elements: [
         {
           name: "participant_age",
-          title: "Jūsu vecums",
+          title: "Jūsu vecums:",
+          isRequired: true,
+          type: "text",
+          inputType: "text",
+          isRequired: true,
+            
+             
+        },
+
+        {
+          name: "participant_gender",
+          title: "Jūsu dzimums:",
           isRequired: true,
           type: "radiogroup",
           choices: [
-            "18-21",
-            "22-25",
-            "26-30",
-            "30-35",
-            "35-40",
-             
+            "Sieviete",
+            "Vīrietis",
+          
+            
           ],
-          showOtherItem: true,
-          otherPlaceholder: {
-            default: "",
-          },
-          otherText: {
-            default: "Cits",
-          },
+          
         },
+        
+
 
         {
           name: "hobbies",
