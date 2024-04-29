@@ -61,13 +61,13 @@ const surveyJson = {
         },
         {
           name: "response_time",
-          title: "Emocijas atzīmēju:",
+          title: "Emociju novertējums tika veikts:",
           isRequired: true,
           type: "radiogroup",
           choices: [
             "Pirms treniņa",
             "Pēc treniņa",
-            "Cits"
+            "Citā laikā (šo atzīmē tikai ne-dejotāji)"
             
           ],
           
