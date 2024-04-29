@@ -75,7 +75,7 @@ const surveyJson = {
         
         {
           visibleIf:
-            "{response_time} = 'Cits' ",
+            "{response_time} = 'Citā laikā' ",
           name: "profession",
           title: "Kāda ir Jūsu nodarbošanās?",
           isRequired: true,
